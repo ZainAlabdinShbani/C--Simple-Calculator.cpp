@@ -1,0 +1,16 @@
+#include <iostream>
+#include <iomanip>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    cout<< fixed << setprecision(9);
+   float b = 3.141592653;
+   float R ;
+   cin>>R;
+   cout<<b*pow(R,2)<<endl;
+
+    return 0;
+}
