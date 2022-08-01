@@ -1,0 +1,17 @@
+#include <iostream>
+#include <algorithm>
+
+
+using namespace std;
+
+int main()
+{
+    long long int A,B,C,maxs,mins;
+    cin>>A>>B>>C;
+    maxs=max(A,max(B,C));
+    mins=min(A,min(B,C));
+    cout<<mins<<" "<<maxs<<endl;
+
+
+    return 0;
+}
