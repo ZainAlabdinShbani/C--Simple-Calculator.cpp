@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+   float A,B;
+   cin>>A>>B;
+   float d = A/B ;
+   cout<<"floor "<<A<<" / "<<B<<" = "<<floor(d)<<endl;
+   cout<<"ceil "<<A<<" / "<<B<<" = "<<ceil(d)<<endl;
+   cout<<"round "<<A<<" / "<<B<<" = "<<round(d)<<endl;
+
+
+    return 0;
+}
