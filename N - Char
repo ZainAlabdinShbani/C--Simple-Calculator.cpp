@@ -1,0 +1,25 @@
+#include <iostream>
+#define ll long long
+
+using namespace std;
+ll convert(){
+    char x,y;
+    cin>>x;
+    if (int(x)>64 && int(x)<97){
+        y=int(x)+32;
+        cout<<y<<endl;
+    }
+    else if (int(x)>96 && int(x)<123){
+         y=int(x)-32;
+         cout<<y<<endl;
+    }
+
+}
+
+int main()
+{
+   convert();
+
+
+    return 0;
+}
