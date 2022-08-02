@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int A,B;
+    char x;
+    cin>>A>>x>>B;
+    if(x==43)
+        cout<<A+B<<endl;
+    else if (x==45)
+        cout<<A-B<<endl;
+    else if (x==42)
+        cout<<A*B<<endl;
+    else if (x==47)
+        cout<<A/B<<endl;
+
+    return 0;
+}
