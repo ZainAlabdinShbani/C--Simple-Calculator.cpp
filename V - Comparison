@@ -1,0 +1,33 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main()
+{
+    int A,B;
+    char x;
+    cin>>A>>x>>B;
+    if(x==61){
+        if(A==B)
+            cout<<"Right\n";
+        else
+            cout<<"Wrong\n";
+    }
+    else if(x==60){
+        if (A<B)
+            cout<<"Right\n";
+        else
+            cout<<"Wrong\n";
+    }
+    else if(x==62){
+        if(A>B)
+            cout<<"Right\n";
+        else
+            cout<<"Wrong\n";
+    }
+
+
+
+    return 0;
+}
