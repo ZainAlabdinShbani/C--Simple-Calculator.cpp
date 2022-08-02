@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int N,x,y,z;
+   cin>>N;
+   x=N/365;
+   y=(N%365)/30;
+   z=(N % 365) % 30;
+   cout<<x<<" years\n";
+   cout<<y<<" months\n";
+   cout<<z<<" days\n";
+
+
+
+
+    return 0;
+}
