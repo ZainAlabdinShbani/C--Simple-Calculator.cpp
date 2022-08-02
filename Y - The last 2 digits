@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    long long a,b,c,d,x,y,z;
+    cin>>a>>b>>c>>d;
+    x=(a*b)%100;
+    y=(c*d)%100;
+    z=(x*y)%100;
+    if(z<10)
+        cout<<0<<z<<endl;
+    else
+        cout<<z<<endl;
+
+    return 0;
+}
