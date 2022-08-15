@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int n,a,b;
+   cin>>n>>a>>b;
+   int sum,sum1=0;
+   for(int i=1;i<=n;i++){
+        int c=i;
+        sum=0;
+    while(c>0){
+        int mod=c%10;
+        sum+=mod;
+        c/=10;
+    }
+    if (sum>=a && sum<=b){
+            sum1+=i;
+    }
+
+   }
+   cout<<sum1<<endl;
+    return 0;
+}
