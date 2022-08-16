@@ -1,0 +1,28 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n,t;
+    cin>>n;
+
+    for(int w=0;w<n;w++){
+        cin>>t;
+        long long a[t];
+        for(int q=0;q<t;q++){
+            cin>>a[q];
+        }
+        int min1=a[1]+a[2]+2-1;
+        for(int i=1;i<=t;i++){
+            for(int j=i+1;j<=t;j++){
+                int x=a[i-1]+a[j-1]+j-i;
+                if(x<min1){
+                    min1=x;
+                }
+            }
+        }
+    cout<<min1<<endl;
+    }
+    return 0;
+}
