@@ -1,0 +1,29 @@
+#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+    }
+    int min1=a[0];
+    for(int i=1;i<n;i++){
+        if(a[i]<min1)
+            min1=a[i];
+    }
+    int freq=0;
+    for(int i=0;i<n;i++){
+        if(min1==a[i])
+            freq++;
+    }
+    if(freq%2==0)
+        cout<<"Unlucky\n";
+    else
+        cout<<"Lucky\n";
+    return 0;
+}
